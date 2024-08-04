@@ -68,7 +68,7 @@ public:
 
             if (!result)
             {
-                handler->PSendSysMessage("Couldn't reload item_template entry %u", entry);
+                handler->PSendSysMessage("不能重载不存在的物品 entry {}", entry);
                 continue;
             }
 
@@ -596,7 +596,7 @@ public:
 
             }
 
-            handler->PSendSysMessage("Reloaded item template entry %u", entry);
+            handler->PSendSysMessage("物品已重载 entry {}", entry);
         }
 
         return true;
