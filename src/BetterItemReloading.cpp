@@ -7,8 +7,7 @@
 #include "Language.h"
 #include "DisableMgr.h"
 #include "Tokenize.h"
-#include <SpellMgr.h>
-
+#include "ItemEnchantmentMgr.h"
 #if AC_COMPILER == AC_COMPILER_GNU
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 #endif
@@ -597,7 +596,7 @@ public:
 
             }
 
-            handler->PSendSysMessage("物品已重载 entry {}", entry);
+            handler->PSendSysMessage("物品已重�entry {}", entry);
         }
 
         return true;
