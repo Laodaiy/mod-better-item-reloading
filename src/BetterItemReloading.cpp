@@ -596,7 +596,7 @@ public:
 
             }
 
-            handler->PSendSysMessage("物品已重�entry {}", entry);
+            handler->PSendSysMessage("物品已重载 entry {}", entry);
         }
 
         return true;
